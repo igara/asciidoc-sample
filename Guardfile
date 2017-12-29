@@ -1,6 +1,6 @@
 p "ビルド開始します"
 
-Dir.glob("docks/**/*.adoc").each do |adocfile|
+Dir.glob("docs/**/*.adoc").each do |adocfile|
 	p adocfile
 	dir = adocfile.gsub(/\w*.adoc/, "")
 	rm = "rm -rf #{dir}/.asciidoctor #{dir}/*.png #{dir}/*.html"
@@ -11,7 +11,7 @@ end
 
 guard 'shell' do
 	watch(/.adoc|.pu/) {|m|
-		Dir.glob("docks/**/*.adoc").each do |adocfile|
+		Dir.glob("docs/**/*.adoc").each do |adocfile|
 			p adocfile
 			dir = adocfile.gsub(/\w*.adoc/, "")
 			rm = "rm -rf #{dir}/.asciidoctor #{dir}/*.png #{dir}/*.html"
