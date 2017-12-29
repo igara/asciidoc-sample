@@ -1,0 +1,8 @@
+# ユーザのプロフィール情報を参照する
+
+[plantuml, diagram-classes, png]
+....
+!include ../../plantuml/models/user.pu
+!include ../../plantuml/models/user_profile.pu
+User->UserProfile
+....

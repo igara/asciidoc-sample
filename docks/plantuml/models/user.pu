@@ -1,0 +1,7 @@
+@startuml user
+
+object User {
+    + id
+}
+
+@enduml

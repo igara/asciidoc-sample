@@ -1,0 +1,8 @@
+@startuml user_profile
+
+object UserProfile {
+    + id
+    + user_id
+}
+
+@enduml

@@ -1,0 +1,8 @@
+# ER
+
+[plantuml, diagram-classes, png]
+....
+!include ../../plantuml/models/user.pu
+!include ../../plantuml/models/user_profile.pu
+User->UserProfile
+....

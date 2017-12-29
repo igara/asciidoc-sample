@@ -1,0 +1,11 @@
+version: '3'
+services:
+  asciidoc:
+    build:
+      context: ./
+      dockerfile: asciidoc.Dockerfile
+    command: guard start
+    volumes:
+      - ./:/asciidoc
+    environment:
+      RUBYOPT: -EUTF-8
