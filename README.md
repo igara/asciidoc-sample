@@ -1,5 +1,5 @@
-[PlantUML](http://plantuml.com/) 使ってます。
-
+[PlantUML](http://plantuml.com/) 使ってます。  
+[AsciiDoc](http://asciidoc.org/)というのも使ってます。
 
 ## Asciidoc の自動画像生成ツール
 
@@ -15,7 +15,7 @@ docker-compose run asciidoc guard start
 ```
 # ライブラリインストール
 bundle install
-# Asciidocのビルドを行う
+# Asciidocのビルドを行う
 bundle exec guard
 もしくは
 guard start
